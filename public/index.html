@@ -194,7 +194,7 @@
 									I've always believed that the right time would come naturally; and that time came on August 11th 2018. 
 									The plan was to do in a casual setting while keeping it simple and romantic. 
 									Deborah proud herself on being good at anticipating things before they happen; 
-									i can tell you she did not see that one coming. I had made arrangements with some of my friends and her friends to meet on a Saturday evening for
+									i can tell you she did not see that one coming. I had made arrangements with some of my friends and hers to meet on a Saturday evening for
 									a “Paint and Sip” class. It was your normal painting class with laughter, games, drinks, music and everybody trying to be Picasso. Towards the end of the class, while she was taking a picture of her panting, I approached her with an even bigger masterpiece artwork: a predesigned canvas with the question: Marry Me Deb! (Well it was more of a command with the "!" at the end) I got on one knee, did my thing and she said YES et Voila!!!....Oh did I mention how much she cried?</p>
 								</div>
 							</div>
@@ -241,7 +241,7 @@
 									</div>
 								</div>
 							</div> -->
-							<div class="col-md-6 col-sm-6 text-center">
+							<div class="col-md-6 col-sm-6 text-center"  style="cursor: pointer;" onclick="mapsSelector()">
 								<div class="event-wrap animate-box">
 									<h3 style ="font-weight:bold;">Ceremony</h3>
 									<div class="event-col">
@@ -257,11 +257,11 @@
 									<div class="event-col" style ="margin: 0 auto; width: 100%;">
 										<i class="icon-location"></i>
 										<span>Ashton Gardens - Atlanta<br></span>
-										<span><a href="http://maps.google.com/?q=260 Peachtree Industrial Blvd, Sugar Hill, GA 30518" style ="color:inherit;">260 Peachtree Industrial Blvd, Sugar Hill, GA 30518</a></span>
+										<span>260 Peachtree Industrial Blvd, Sugar Hill, GA 30518</span>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 col-sm-6 text-center">
+							<div class="col-md-6 col-sm-6 text-center" style="cursor: pointer;" onclick="mapsSelector()">
 								<div class="event-wrap animate-box">
 									<h3 style ="font-weight:bold;">Reception</h3>
 									<div class="event-col">
@@ -277,7 +277,7 @@
 									<div class="event-col" style ="margin: 0 auto; width: 100%;">
 										<i class="icon-location"></i>
 										<span>Ashton Gardens - Atlanta<br></span>
-										<span><a href="http://maps.google.com/?q=260 Peachtree Industrial Blvd, Sugar Hill, GA 30518" style ="color:inherit;">260 Peachtree Industrial Blvd, Sugar Hill, GA 30518</a></span>
+										<span>260 Peachtree Industrial Blvd, Sugar Hill, GA 30518</span>
 									</div>
 									<!--Commented in version 1 for no information reason-->
 									<!--
@@ -740,6 +740,18 @@
         day: d.getDate(),
         enableUtc: false
     });
+	
+	//for mobile user when clicked on event location to open navigation maps
+	function mapsSelector() {
+		if /* if we're on iOS, open in Apple Maps */
+    ((navigator.platform.indexOf("iPhone") != -1) || 
+     (navigator.platform.indexOf("iPod") != -1) || 
+     (navigator.platform.indexOf("iPad") != -1))
+    window.open("maps://maps.google.com/?q=260 Peachtree Industrial Blvd, Sugar Hill, GA 30518");
+
+		else /* else use Google */
+    window.open("http://maps.google.com/?q=260 Peachtree Industrial Blvd, Sugar Hill, GA 30518");
+};
 </script>
 
 	</body>

@@ -235,6 +235,8 @@
 		counter();
 		counterWayPoint();
 	});
+	
+	
 
 
 }());
