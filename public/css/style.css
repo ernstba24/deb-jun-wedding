@@ -1031,6 +1031,7 @@ form label {
 #fh5co-couple,
 #fh5co-gallery,
 #fh5co-travel-accomodation,
+#fh5co-while-in-the-a,
 .fh5co-section {
   padding: 7em 0;
   clear: both;
@@ -1045,6 +1046,7 @@ form label {
   #fh5co-couple,
   #fh5co-gallery,
   #fh5co-travel-accomodation,
+  #fh5co-while-in-the-a,
   .fh5co-section {
     padding: 3em 0;
   }
@@ -1876,5 +1878,36 @@ form label {
 .js .animate-box {
   opacity: 0;
 }
-
+/*while-in-the-a section*/
+.tab{
+    box-shadow:0 3px 10px rgba(0,0,0,.3);
+}
+.tab .nav-tabs{
+    border-bottom:2px solid #f1b4b2;
+}
+.tab .nav-tabs li{
+    margin-bottom:0px;
+    margin-right:0px;
+}
+.tab .nav-tabs li a {
+    font-size:14px;
+    color:#808080;
+    outline:none;
+    margin-right:0px;
+    padding:20px 25px;
+    border-radius:0;
+    text-transform:uppercase;
+}
+.tab .nav-tabs li a:hover,
+.tab .nav-tabs li.active a{
+    background:#f1b4b2;
+    color:#fff;
+}
+.tab .tab-content{
+    color:#5a5c5d;
+    padding: 20px;
+}
+@media only screen and (max-width: 480px){
+    .tab .nav-tabs > li{ width:100%; }
+}
 /*# sourceMappingURL=style.css.map */
