@@ -1910,4 +1910,8 @@ form label {
 @media only screen and (max-width: 480px){
     .tab .nav-tabs > li{ width:100%; }
 }
+
+.row:before, .row:after {
+display: flex !important;
+}
 /*# sourceMappingURL=style.css.map */
