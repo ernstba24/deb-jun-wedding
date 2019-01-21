@@ -851,7 +851,65 @@ h1, h2, h3, h4, h5, h6, figure {
 form label {
   font-weight: normal !important;
 }
+.choice_label {
+	font-weight: normal !important;
+color: #ffffff;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.choice_label input{
+position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.choice_label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
 
+/* When the radio button is checked, add a blue background */
+.choice_label input:checked ~ .checkmark {
+  background-color: black;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.choice_label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.choice_label .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
 #fh5co-header .display-tc,
 #fh5co-counter .display-tc,
 .fh5co-cover .display-tc {
@@ -1413,8 +1471,8 @@ form label {
 #fh5co-started .btn {
   height: 54px;
   border: none !important;
-  background: #F14E95;
-  color: #fff;
+  background: #fff;
+  color: #f1b4b2;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
@@ -1914,4 +1972,6 @@ form label {
 .row:before, .row:after {
 display: flex !important;
 }
+
+
 /*# sourceMappingURL=style.css.map */
