@@ -173,7 +173,7 @@
 				<div class="col-md-12 col-md-offset-0">
 					<ul class="timeline animate-box">
 						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(images/story1.jpg);"></div>
+							<div class="timeline-badge" style="background-image:url(images/story2.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">How We Met</h3>
@@ -592,25 +592,77 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="col-md-6">
-						<button class="accordion">Section 1</button>
+						<button class="accordion">Where is the wedding taking place?</button>
 						<div class="panel">
 							<p>Lorem ipsum...</p>
 						</div>
 					</div>
 					<div class="col-md-6">
-						<button class="accordion">Section 1</button>
+						<button class="accordion">What is the closest airport?</button>
+						<div class="panel">
+							<p>Hartsfield-Jackson Atlanta International Airport (ATL).
+							See Travel &amp; Accomodation section for more info.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<button class="accordion">How far is the airport from the venue?</button>
 						<div class="panel">
 							<p>Lorem ipsum...</p>
 						</div>
 					</div>
 					<div class="col-md-6">
-						<button class="accordion">Section 1</button>
+						<button class="accordion">Do you have a hotel room block?</button>
 						<div class="panel">
 							<p>Lorem ipsum...</p>
 						</div>
 					</div>
 					<div class="col-md-6">
-						<button class="accordion">Section 1</button>
+						<button class="accordion">Will transportation be provided from airport?</button>
+						<div class="panel">
+							<p>Lorem ipsum...</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<button class="accordion">Will transportation be provided to the ceremony and/or reception</button>
+						<div class="panel">
+							<p>Lorem ipsum...</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<button class="accordion">What time should we get there?</button>
+						<div class="panel">
+							<p>We hope and would love to know if you can make it. Please RSVP by (insert date) either
+							through this website RSVP section or the electronic invite.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<button class="accordion">Is there a dress code?</button>
+						<div class="panel">
+							<p>3 words: Dress To Impress.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<button class="accordion">When are RSVPs due?</button>
+						<div class="panel">
+							<p>We hope and would love to know if you can make it. Please RSVP by (insert date) either
+							through this website RSVP section or the electronic invite.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<button class="accordion">Are there any other wedding events that I'm invited to?</button>
+						<div class="panel">
+							<p>We hope and would love to know if you can make it. Please RSVP by (insert date) either
+							through this website RSVP section or the electronic invite.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<button class="accordion">Were are you registered?</button>
+						<div class="panel">
+							<p>Lorem ipsum...</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<button class="accordion">Who do I contact if I have other questions?</button>
 						<div class="panel">
 							<p>Lorem ipsum...</p>
 						</div>
@@ -888,7 +940,7 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    this.classList.toggle("open");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
