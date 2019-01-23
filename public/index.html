@@ -83,8 +83,8 @@
 						<li><a href="#fh5co-event">Main Events</a></li>
 						<li><a href="#fh5co-travel-accomodation">Travel &amp; Accomodation </a></li>
 						<li><a href="#fh5co-while-in-the-a">While In The A</a></li>
-						<li><a href="#fh5co-gallery">Gallery</a></li>
 						<li><a href="#fh5co-started">RSVP</a></li>
+						<li><a href="#fh5co-gallery">Gallery</a></li>
 						<li><a href="#fh5co-faqs">FAQs</a></li>
 					</ul>
 				</div>
@@ -244,7 +244,28 @@
 									</div>
 								</div>
 							</div> -->
-							<div class="col-md-6 col-sm-6 text-center"  style="cursor: pointer;" onclick="mapsSelector()">
+							<div class="col-md-4 col-sm-4 text-center"  style="cursor: pointer;" onclick="mapsSelector1()">
+								<div class="event-wrap animate-box">
+									<h3 style ="font-weight:bold;">Wedding Shower</h3>
+									<div class="event-col">
+										<i class="icon-clock"></i>
+										<span style ="font-weight:bold;">3:30 PM</span>
+										<span style ="font-weight:bold;">7:30 PM</span>
+									</div>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span style ="font-weight:bold;">Saturday 23</span>
+										<span style ="font-weight:bold;" >Feb, 2019</span>
+									</div>
+									<div class="event-col" style ="margin: 0 auto; width: 100%;">
+										<i class="icon-location"></i>
+										
+										<span>618 Holland Ridge Dr, La Vergne, TN 37086</span>
+										<span><br></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 text-center"  style="cursor: pointer;" onclick="mapsSelector()">
 								<div class="event-wrap animate-box">
 									<h3 style ="font-weight:bold;">Ceremony</h3>
 									<div class="event-col">
@@ -264,7 +285,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 col-sm-6 text-center" style="cursor: pointer;" onclick="mapsSelector()">
+							<div class="col-md-4 col-sm-4 text-center" style="cursor: pointer;" onclick="mapsSelector()">
 								<div class="event-wrap animate-box">
 									<h3 style ="font-weight:bold;">Reception</h3>
 									<div class="event-col">
@@ -401,24 +422,66 @@
 			</div>
 		</div>
 	</div>
-	 <!-- <div id="fh5co-faqs">
+	
+	
+	<div id="fh5co-started" name="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
+		<div class="overlay"></div>
 		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>We Love Each Other</span>
-					<h2>Our Story</h2>
-					<p>We are always excited to tell our love story. We remember exactly where it started, and now we know it will never end.</p>
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<span>Repondez s'il vous plait</span>
+					<h2>Are You Attending?</h2>
+					<p>Please fill out this form to confirm whether you're attending or not.</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-
-
-					
+			<div class="row animate-box">
+				<div class="col-md-10 col-md-offset-1">
+					<form class="form-inline" action="https://formspree.io/thebarbiers2019@gmail.com" method="POST">
+						<div class="col-md-6 col-sm-6">
+							<div class="form-group">
+								<label for="name" class="sr-only">Name</label>
+								<input type="name" class="form-control" id="name" placeholder="Name" name="Name" required>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="form-group">
+								<label for="name" class="sr-only">Guest</label>
+								<input type="name" class="form-control" id="name" placeholder="Guest Name (if invited)" name="Guest">
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="form-group">
+								<label for="email" class="sr-only">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="Email" name="Email">
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="form-group">
+								<label for="number" class="sr-only">Phone</label>
+								<input type="tel" class="form-control" id="number" placeholder="Phone Number" name="Phone">
+							</div>
+						</div>
+						
+						<div class="col-md-6 col-sm-6">
+							<div class="">
+								<label for="Choice" class="choice_label">Attending
+								<input type="radio" class="" id="" value="Attending" name="Choice" required>
+								<span class="checkmark"></span></label>
+								<label for="Choice" class="choice_label">Not Attending
+								<input type="radio" class="" id="" value="Not Attending" name="Choice" required>
+								<span class="checkmark"></span></label>
+								
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<button type="submit" class="btn btn-default btn-block" target="_blank">Submit</button>
+							<div class="text-center" style ="color: white; font-size: 10px;">You'll be redirected to another page to complete the form submission.</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
-	</div>  -->
+	</div>
 
 	<div id="fh5co-gallery" name="fh5co-gallery" class="fh5co-section-gray">
 		<div class="container">
@@ -518,6 +581,48 @@
 			</div>
 		</div>
 	</div>
+	
+	  <div id="fh5co-faqs">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span>FAQs</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-6">
+						<button class="accordion">Section 1</button>
+						<div class="panel">
+							<p>Lorem ipsum...</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<button class="accordion">Section 1</button>
+						<div class="panel">
+							<p>Lorem ipsum...</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<button class="accordion">Section 1</button>
+						<div class="panel">
+							<p>Lorem ipsum...</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<button class="accordion">Section 1</button>
+						<div class="panel">
+							<p>Lorem ipsum...</p>
+						</div>
+					</div>
+	
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
 	<!--jr_editv1 commented out-->
 	<!-- <div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
 		<div class="overlay"></div>
@@ -617,63 +722,7 @@
 	</div> -->
 
 
-	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Are You Attending?</h2>
-					<p>Please fill out this form to confirm whether you're attending or not.</p>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline" action="https://formspree.io/thebarbiers2019@gmail.com" method="POST">
-						<div class="col-md-6 col-sm-6">
-							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name" name="Name" required>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<div class="form-group">
-								<label for="name" class="sr-only">Guest</label>
-								<input type="name" class="form-control" id="name" placeholder="Guest Name (if invited)" name="Guest">
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email" name="Email">
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<div class="form-group">
-								<label for="number" class="sr-only">Phone</label>
-								<input type="tel" class="form-control" id="number" placeholder="Phone Number" name="Phone">
-							</div>
-						</div>
-						
-						<div class="col-md-6 col-sm-6">
-							<div class="">
-								<label for="Choice" class="choice_label">Attending
-								<input type="radio" class="" id="" value="Attending" name="Choice" required>
-								<span class="checkmark"></span></label>
-								<label for="Choice" class="choice_label">Not Attending
-								<input type="radio" class="" id="" value="Not Attending" name="Choice" required>
-								<span class="checkmark"></span></label>
-								
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<button type="submit" class="btn btn-default btn-block" target="_blank">Submit</button>
-							<span>You'll be redirected to another page to complete the form submission.</span>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	
 <!--Commented in V1.0 since section is not needed. Replaced section with booking information-->
 <!--
@@ -821,6 +870,33 @@
 		else /* else use Google */
     window.open("http://maps.google.com/?q=260 Peachtree Industrial Blvd, Sugar Hill, GA 30518");
 };
+
+function mapsSelector1() {
+		if /* if we're on iOS, open in Apple Maps */
+    ((navigator.platform.indexOf("iPhone") != -1) || 
+     (navigator.platform.indexOf("iPod") != -1) || 
+     (navigator.platform.indexOf("iPad") != -1))
+    window.open("maps://maps.google.com/?q=618 Holland Ridge Dr, La Vergne, TN, 37086");
+
+		else /* else use Google */
+    window.open("http://maps.google.com/?q=618 Holland Ridge Dr, La Vergne, TN, 37086");
+};
+
+//FAQs accordion script
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
 </script>
 
 	</body>
