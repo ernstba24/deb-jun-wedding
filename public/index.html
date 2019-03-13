@@ -63,6 +63,16 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134064847-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-134064847-1');
+	</script>
 
 	</head>
 	<body>
@@ -83,8 +93,9 @@
 						<li><a href="#fh5co-event">Main Events</a></li>
 						<li><a href="#fh5co-travel-accomodation">Travel &amp; Accomodation </a></li>
 						<li><a href="#fh5co-started">RSVP</a></li>
-						<li><a href="#fh5co-gallery">Gallery</a></li>
 						<li><a href="#fh5co-while-in-the-a">While In The A</a></li>
+						<li><a href="#fh5co-gallery">Gallery</a></li>
+						<li><a href="#fh5co-registry">Registry</a></li>
 						<li><a href="#fh5co-faqs">FAQs</a></li>
 					</ul>
 				</div>
@@ -429,24 +440,111 @@
 		</div>
 	</div>
 	
+	
+	
+	<div id="fh5co-started" name="fh5co-started" class="fh5co-bg" style="background-image:url(images/back.jpeg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<span style="color:white">Repondez s'il vous plait</span>
+					<h2>Are You Attending?</h2>
+					<p>Please submit this form to confirm/decline your participation and meal choice by <strong>March 20th, 2019.</strong><br>Failure
+					 to communicate your decision to us by this date will be ruled as <i>"Not Attending"</i>.</p>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-10 col-md-offset-1">
+					<form class="form-inline" action="https://formspree.io/thebarbiers2019@gmail.com" method="POST">
+						<div class="col-md-6 col-sm-6">
+							<div class="form-group">
+								<label for="name" class="sr-only">Name</label>
+								<input type="name" class="form-control" id="name" placeholder="Name" name="Name" required>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="form-group">
+								<label for="name" class="sr-only">Guest</label>
+								<input type="name" class="form-control" id="name" placeholder="Guest Name (if invited)" name="Guest">
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="form-group">
+								<label for="email" class="sr-only">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="Email" name="Email">
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="form-group">
+								<label for="number" class="sr-only">Phone</label>
+								<input type="tel" class="form-control" id="number" placeholder="Phone Number" name="Phone">
+							</div>
+						</div>
+						
+						<div class="col-md-6 col-sm-6">
+							<div class="">
+								<div class="form_heading" ><span>Participation</span></div>
+								<label for="Choice" class="choice_label">Attending
+								<input type="radio" class="" id="" value="Attending" name="Choice" required>
+								<span class="checkmark"></span></label>
+								<label for="Choice" class="choice_label">Not Attending
+								<input type="radio" class="" id="" value="Not Attending" name="Choice" required>
+								<span class="checkmark"></span></label>									
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="">
+								<div class="form_heading" ><span>Entree Meat Choice</span></div>
+								<label for="Meat_selection" class="choice_label">Chicken Paillard 
+								<br><div style ="color: white; font-size: 10px;"><i>White Wine and Parsley Infused Cream</i></div>
+								<input type="radio" class="" id="" value="chicken" name="Meat_selection" required>
+								<span class="checkmark"></span></label>
+								<label for="Meat_selection" class="choice_label">Ginger Sesame Flank Steak*
+								<br><div style ="color: white; font-size: 10px;"><i>Soy, Garlic and Red Pepper Flake Sauce<br>*served raw or undercooked</i></div>
+								<input type="radio" class="" id="" value="steak" name="Meat_selection" required>
+								<span class="checkmark"></span></label>
+								<label for="Meat_selection" class="choice_label">Vegetarian
+								<input type="radio" class="" id="" value="vegetarian" name="Meat_selection" required>
+								<span class="checkmark"></span></label>									
+							</div>
+						</div>
+						<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<div class="form_heading" ><span>Indicate guest choice</span></div>
+							<input type="name" class="form-control" id="name" placeholder="Enter guest choice" name="Guest_Meat_selection">
+							<span class="checkmark"></span></label>
+						</div>
+						
+						<div class="col-md-6 col-sm-6">
+							<button type="submit" class="btn btn-default btn-block" target="_blank">Submit</button>
+							<div class="text-center" style ="color: white; font-size: 10px;">You'll be redirected to another page to complete the form submission.</div>
+						</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	<div id="fh5co-while-in-the-a" name="fh5co-while-in-the-a">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<span>Things to do </span>
 					<h2>While in the A</h2>
-					<p>Here is some of our recommended things to do in Atlanta</p>
+					<p>Here are some of our recommended places to visit while in Atlanta</p>
 				</div>
 			</div>
 		
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
+				<div class="col-md-12">
 								<div class="tab" role="tabpanel">
 									<!-- Nav tabs -->
 									<ul class="nav nav-tabs" role="tablist">
 										<li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Attractions</a></li>
 										<li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">Restaurant</a></li>
 										<li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">Eat and Play</a></li>
+										<li role="presentation"><a href="#Section5" aria-controls="messages" role="tab" data-toggle="tab">Shopping</a></li>
 										<li role="presentation"><a href="#Section4" aria-controls="messages" role="tab" data-toggle="tab">Turn Up</a></li>
 									</ul>
 								</div>
@@ -454,14 +552,14 @@
 								<div class="tab-content tabs">
 										<div role="tabpanel" class="tab-pane fade in active" id="Section1">
 										
-											<div class="row list-group">
-												<div class=" item  col-xs-4 col-lg-4">
+											<div class="row">
+												<div class=" item  col-md-4">
 													<div class="thumbnail" style ="background-image: url(images/citypass.jpg)">
 														<!-- <img  class="group list-group-image" src="images/citypass.jpg" alt="" style="width:100%"> -->
 													</div>
 													<div class="caption">
-														<h4 class="group inner list-group-item-heading">Atl CtiyPass Attractions</h4>
-														<p class = "group inner list-group-item-text">
+														<h4 class="">Atl CtiyPass Attractions</h4>
+														<p class = "">
 														 City Pass get you access to: Georgia Aquarium | CNN Studio Tours | World Of Coca-Cola | 
 														 History Center and more...</p>
 													</div>
@@ -488,6 +586,8 @@
 														 .</p>
 													</div>
 												</div>
+												</div>
+												<div class="row">
 												
 												<div class=" item  col-xs-4 col-lg-4">
 													<div class="thumbnail" style ="background-image: url(images/poncecity.jpg)">
@@ -496,7 +596,7 @@
 													<div class="caption">
 														<h4 class="group inner list-group-item-heading">Ponce City Market | Belt Line</h4>
 														<p class = "group inner list-group-item-text">
-														 .</p>
+														 </p>
 													</div>
 												</div>
 												
@@ -507,7 +607,7 @@
 													<div class="caption">
 														<h4 class="group inner list-group-item-heading">Atlanta Botanical Gardens</h4>
 														<p class = "group inner list-group-item-text">
-														 .</p>
+														 </p>
 													</div>
 												</div>
 												
@@ -518,10 +618,11 @@
 													<div class="caption">
 														<h4 class="group inner list-group-item-heading">Museums</h4>
 														<p class = "group inner list-group-item-text">
-														 .</p>
+														 (Recommended: High Museum of Art | Center for Civil and Human Rights | TI's Trap Museum)</p>
 													</div>
 												</div>
-												
+												</div>
+												<div class="row">
 												<div class=" item  col-xs-4 col-lg-4">
 													<div class="thumbnail" style ="background-image: url(images/sixflags.jpg)">
 														<!-- <img  class="group list-group-image" src="images/piedmont.jpg" alt="" style="width:100%"> -->
@@ -547,7 +648,7 @@
 											</div>
 										</div>
 										<div role="tabpanel" class="tab-pane fade" id="Section2">	
-											<div class="row list-group">
+											<div class="row">
 											<div class=" item  col-xs-4 col-lg-4">
 														<div class="thumbnail" style ="background-image: url(images/atlanticstation.jpg)">
 															<!-- <img  class="group list-group-image" src="images/piedmont.jpg" alt="" style="width:100%"> -->
@@ -579,6 +680,8 @@
 															 </p>
 														</div>
 												</div>
+												</div>
+												<div class="row">
 												
 												<div class=" item  col-xs-4 col-lg-4">
 														<div class="thumbnail" style ="background-image: url(images/beefgrill.jpg)">
@@ -612,7 +715,7 @@
 														<div class="caption">
 															<h4 class="group inner list-group-item-heading">Painted Duck | Painted Pin</h4>
 															<p class = "group inner list-group-item-text">
-															 .</p>
+															 (Recommended: Painted Pin)</p>
 														</div>
 												</div>
 												
@@ -623,7 +726,7 @@
 														<div class="caption">
 															<h4 class="group inner list-group-item-heading">Main Event Entertainment</h4>
 															<p class = "group inner list-group-item-text">
-															 .</p>
+															 </p>
 														</div>
 												</div>
 												
@@ -634,10 +737,11 @@
 														<div class="caption">
 															<h4 class="group inner list-group-item-heading">TopGolf</h4>
 															<p class = "group inner list-group-item-text">
-															 .</p>
+															 </p>
 														</div>
 												</div>
-												
+												</div>
+												<div class="row">
 												<div class=" item  col-xs-4 col-lg-4">
 														<div class="thumbnail" style ="background-image: url(images/andretti.png)">
 															<!-- <img  class="group list-group-image" src="images/piedmont.jpg" alt="" style="width:100%"> -->
@@ -645,7 +749,7 @@
 														<div class="caption">
 															<h4 class="group inner list-group-item-heading">Andretti Indoor Karting</h4>
 															<p class = "group inner list-group-item-text">
-															 .</p>
+															 </p>
 														</div>
 												</div>
 												
@@ -656,7 +760,7 @@
 														<div class="caption">
 															<h4 class="group inner list-group-item-heading">Slingshot Entertainment</h4>
 															<p class = "group inner list-group-item-text">
-															 .</p>
+															 </p>
 														</div>
 												</div>
 												
@@ -667,13 +771,26 @@
 														<div class="caption">
 															<h4 class="group inner list-group-item-heading">Battle and Brew</h4>
 															<p class = "group inner list-group-item-text">
-															 .</p>
+															 </p>
 														</div>
 												</div>
 											</div>
+											<div class="row">
+												<div class=" item  col-xs-4 col-lg-4">
+														<div class="thumbnail" style ="background-image: url(images/skyline.png)">
+															<!-- <img  class="group list-group-image" src="images/piedmont.jpg" alt="" style="width:100%"> -->
+														</div>
+														<div class="caption">
+															<h4 class="group inner list-group-item-heading">Skyline Park</h4>
+															<p class = "group inner list-group-item-text">
+															 </p>
+														</div>
+												</div>
+											
+											</div>
 										</div>
 										<div role="tabpanel" class="tab-pane fade" id="Section4">
-										<div class="row list-group">
+										<div class="row">
 											<div class=" item  col-xs-4 col-lg-4">
 														<div class="thumbnail" style ="background-image: url(images/edgewood.jpg)">
 															<!-- <img  class="group list-group-image" src="images/piedmont.jpg" alt="" style="width:100%"> -->
@@ -707,7 +824,8 @@
 															 </p>
 														</div>
 												</div>
-												
+												</div>
+												<div class="row">
 												<div class=" item  col-xs-4 col-lg-4">
 														<div class="thumbnail" style ="background-image: url(images/magiccity.png)">
 															<!-- <img  class="group list-group-image" src="images/piedmont.jpg" alt="" style="width:100%"> -->
@@ -715,6 +833,65 @@
 														<div class="caption">
 															<h4 class="group inner list-group-item-heading">Magic City</h4>
 															<p class = "group inner list-group-item-text"> Last but not least....Make it Rain
+															 </p>
+														</div>
+												</div>
+										</div>		
+										</div>
+										
+										<div role="tabpanel" class="tab-pane fade" id="Section5">
+										<div class="row">
+											<div class=" item  col-xs-4 col-lg-4">
+														<div class="thumbnail" style ="background-image: url(images/lenox.jpg)">
+															<!-- <img  class="group list-group-image" src="images/piedmont.jpg" alt="" style="width:100%"> -->
+														</div>
+														<div class="caption">
+															<h4 class="group inner list-group-item-heading">Lenox Square</h4>
+															<p class = "group inner list-group-item-text">
+															 </p>
+														</div>
+												</div>
+												
+												<div class=" item  col-xs-4 col-lg-4">
+														<div class="thumbnail" style ="background-image: url(images/phipps.jpg)">
+															<!-- <img  class="group list-group-image" src="images/piedmont.jpg" alt="" style="width:100%"> -->
+														</div>
+														<div class="caption">
+															<h4 class="group inner list-group-item-heading">Phipps Plaza</h4>
+															<p class = "group inner list-group-item-text">
+															 </p>
+														</div>
+												</div>
+												
+												<div class=" item  col-xs-4 col-lg-4">
+														<div class="thumbnail" style ="background-image: url(images/perimeter.jpg)">
+															<!-- <img  class="group list-group-image" src="images/piedmont.jpg" alt="" style="width:100%"> -->
+														</div>
+														<div class="caption">
+															<h4 class="group inner list-group-item-heading">Perimeter Mall</h4>
+															<p class = "group inner list-group-item-text"> 
+															 </p>
+														</div>
+												</div>
+												</div>
+												<div class="row">
+												<div class=" item  col-xs-4 col-lg-4">
+														<div class="thumbnail" style ="background-image: url(images/atlanticstation.jpg)">
+															<!-- <img  class="group list-group-image" src="images/piedmont.jpg" alt="" style="width:100%"> -->
+														</div>
+														<div class="caption">
+															<h4 class="group inner list-group-item-heading">Atlantic Station</h4>
+															<p class = "group inner list-group-item-text">
+															 </p>
+														</div>
+												</div>
+												<div class=" item  col-xs-4 col-lg-4">
+														<div class="thumbnail" style ="background-image: url(images/avalon.jpg)">
+															<!-- <img  class="group list-group-image" src="images/piedmont.jpg" alt="" style="width:100%"> -->
+														</div>
+														<div class="caption">
+															<h4 class="group inner list-group-item-heading">Avalon</h4>
+															<p class = "group inner list-group-item-text">
 															 </p>
 														</div>
 												</div>
@@ -728,68 +905,8 @@
 			</div>
 		</div>
 	</div>
-	
-	
-	<div id="fh5co-started" name="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<span>Repondez s'il vous plait</span>
-					<h2>Are You Attending?</h2>
-					<p>Please fill out this form to confirm whether you're attending or not.</p>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline" action="https://formspree.io/thebarbiers2019@gmail.com" method="POST">
-						<div class="col-md-6 col-sm-6">
-							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name" name="Name" required>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<div class="form-group">
-								<label for="name" class="sr-only">Guest</label>
-								<input type="name" class="form-control" id="name" placeholder="Guest Name (if invited)" name="Guest">
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email" name="Email">
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<div class="form-group">
-								<label for="number" class="sr-only">Phone</label>
-								<input type="tel" class="form-control" id="number" placeholder="Phone Number" name="Phone">
-							</div>
-						</div>
-						
-						<div class="col-md-6 col-sm-6">
-							<div class="">
-								<label for="Choice" class="choice_label">Attending
-								<input type="radio" class="" id="" value="Attending" name="Choice" required>
-								<span class="checkmark"></span></label>
-								<label for="Choice" class="choice_label">Not Attending
-								<input type="radio" class="" id="" value="Not Attending" name="Choice" required>
-								<span class="checkmark"></span></label>
-								
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<button type="submit" class="btn btn-default btn-block" target="_blank">Submit</button>
-							<div class="text-center" style ="color: white; font-size: 10px;">You'll be redirected to another page to complete the form submission.</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<div id="fh5co-gallery" name="fh5co-gallery" class="fh5co-section-gray">
+	<div id="fh5co-gallery" name="fh5co-gallery" >
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -808,18 +925,18 @@
 					<ul id="fh5co-gallery-list">
 
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/1.png); ">
-						<a href="images/1.png">
+						<a href="#">
 							<div class="case-studies-summary">
-								<span>2012</span>
-								<h2>The Beginnings</h2>
+								<span></span>
+								<h2>1st Year Dating</h2>
 							</div>
 						</a>
 					</li>
 					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/2.png); ">
 						<a href="#" class="color-2">
 							<div class="case-studies-summary">
-								<span>2013</span>
-								<h2>Lazy</h2>
+								<span></span>
+								<h2>Random Pic</h2>
 							</div>
 						</a>
 					</li>
@@ -828,7 +945,7 @@
 					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/3.png);; ">
 						<a href="#" class="color-3">
 							<div class="case-studies-summary">
-								<span>#BdayCelebration</span>
+								<span></span>
 								<h2>Bonnie and Clyde</h2>
 							</div>
 						</a>
@@ -836,7 +953,7 @@
 					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/4.png);; ">
 						<a href="#" class="color-4">
 							<div class="case-studies-summary">
-								<span>#FamilyTrip</span>
+								<span></span>
 								<h2>Beach Please</h2>
 							</div>
 						</a>
@@ -844,31 +961,31 @@
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/7.png); ">
 							<a href="#" class="color-4">
 								<div class="case-studies-summary">
-									<span>#Bumblebees</span>
-									<h2>Random Pic</h2>
+									<span></span>
+									<h2>Church</h2>
 								</div>
 							</a>
 						</li>
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/8.png);; ">
 						<a href="#" class="color-3">
 							<div class="case-studies-summary">
-								<span>#HeliRide</span>
-								<h2>Co-Piloting</h2>
+								<span></span>
+								<h2>Co-piloting</h2>
 							</div>
 						</a>
 					</li>
 					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/10.png);; ">
 						<a href="#" class="color-4">
 							<div class="case-studies-summary">
-								<span>#IGotYou</span>
-								<h2>Haiti Trip</h2>
+								<span></span>
+								<h2>Back Home</h2>
 							</div>
 						</a>
 					</li>
 					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/5.png);">
 							<a href="#" class="color-3">
 								<div class="case-studies-summary">
-									<span>#ForeverStart</span>
+									<span></span>
 									<h2>Proposal</h2>
 								</div>
 							</a>
@@ -877,8 +994,8 @@
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/img2.jpg);">
 							<a href="#" class="color-3">
 								<div class="case-studies-summary">
-									<span>#SealedDeal</span>
-									<h2>In Love</h2>
+									<span></span>
+									<h2>Engagement Shot</h2>
 								</div>
 							</a>
 						</li>
@@ -888,11 +1005,30 @@
 		</div>
 	</div>
 	
-	  <div id="fh5co-faqs">
+	<div id="fh5co-registry" name="fh5co-registry" class="fh5co-section-gray"> 
 		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>FAQs</span>
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<span></span>
+						<h2>Registry</h2>
+					</div>
+				</div>
+				<div class="row row-bottom-padded-md">
+					<div class=" col-md-12 reg">
+						<a href="https://www.macys.com/wgl/registry/guest/6990285" target="_blank"><img class="card" src="images/macys.png"></a>
+						<a href="http://tgt.gifts/barbier2019" target="_blank"><img class="card" src="images/target.png"></a>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+	
+	  <div id="fh5co-faqs" name="fh5co-registry">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<span>Frequently Asked Questions</span>
+					<h2>FAQs</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -921,58 +1057,65 @@
 					<div class="col-md-6">
 						<button class="accordion">Do you have a hotel room block?</button>
 						<div class="panel">
-							<p>Lorem ipsum...</p>
+							<p>Yes we do. Please contact Homewood Suites by Hilton Atlanta I-85-Lawrenceville-Duluth to make your
+								reservation. Take a look at the Travel &amp; Accommodation section for more info.</p>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<button class="accordion">Will transportation be provided from airport?</button>
 						<div class="panel">
-							<p>Lorem ipsum...</p>
+							<p>TBD</p>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<button class="accordion">Will transportation be provided to the ceremony and/or reception</button>
 						<div class="panel">
-							<p>Lorem ipsum...</p>
+							<p>Guest staying at Homewood Suites by Hilton Atlanta I-85-Lawrenceville-Duluth will be provided with shuttle service to and from the event venue. 
+							Shuttle service will be scheduled accordingly.</p>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<button class="accordion">What time should we get there?</button>
 						<div class="panel">
-							<p>We hope and would love to know if you can make it. Please RSVP by (insert date) either
-							through this website RSVP section or the electronic invite.</p>
+							<p>Please Plan to arrive between 6:00pm - 6:30pm. Keep in mind Atlanta's evening rush hour traffic</p>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<button class="accordion">Is there a dress code?</button>
 						<div class="panel">
-							<p>3 words: Dress To Impress.</p>
+							<p>Evening formal attire</p>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<button class="accordion">When are RSVPs due?</button>
 						<div class="panel">
-							<p>We hope and would love to know if you can make it. Please RSVP by (insert date) either
-							through this website RSVP section or the electronic invite.</p>
+							<p>We hope and would love to know if you can make it. Please RSVP by 03/20/19.
+							In order to participate at the wedding, a final confirmation is
+							required to be submitted through the website. If you are having any issues submitting your confirmation,
+							please contact us at 615-707-4484.</p>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<button class="accordion">Are there any other wedding events that I'm invited to?</button>
 						<div class="panel">
-							<p>We hope and would love to know if you can make it. Please RSVP by (insert date) either
-							through this website RSVP section or the electronic invite.</p>
+							<p>We are having our Wedding Shower on 02/23/2019 at 618 Holland Ridge Dr, La Vergne, TN, 37086.<br>
+							Dinner rehearsal : TDB.
+							</p>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<button class="accordion">Were are you registered?</button>
 						<div class="panel">
-							<p>Lorem ipsum...</p>
+							<p>
+							<a href="https://www.macys.com/wgl/registry/guest/6990285" target="_blank" style="color: inherit">Macys</a><br>
+							<a  href="http://tgt.gifts/barbier2019" target="_blank" style="color: inherit" >Target</a>
+							</p>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<button class="accordion">Who do I contact if I have other questions?</button>
 						<div class="panel">
-							<p>Lorem ipsum...</p>
+							<p>Deborah @ (615)707-4484</p>
 						</div>
 					</div>
 	

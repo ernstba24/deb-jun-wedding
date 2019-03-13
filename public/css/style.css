@@ -1052,6 +1052,8 @@ width: 25px;
 #fh5co-gallery,
 #fh5co-travel-accomodation,
 #fh5co-while-in-the-a,
+#fh5co-faqs,
+#fh5co-registry,
 .fh5co-section {
   padding: 7em 0;
   clear: both;
@@ -1067,6 +1069,8 @@ width: 25px;
   #fh5co-gallery,
   #fh5co-travel-accomodation,
   #fh5co-while-in-the-a,
+  #fh5co-faqs,
+  #fh5co-registry,
   .fh5co-section {
     padding: 3em 0;
   }
@@ -2077,6 +2081,10 @@ While in the The A mobile display
 		clear: left;
 	}
 }
+.caption{
+	clear:left;
+	position: relative;
+}
 .item.list-group-item
 {
     float: none;
@@ -2100,7 +2108,7 @@ While in the The A mobile display
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* position: relative; */
+    position: relative; 
 }
 @media screen and (max-width: 500px) {
 .item.list-group-item .caption
@@ -2132,5 +2140,27 @@ While in the The A mobile display
     margin: 0 0 11px;
 }
 
+.reg {
+  text-align: center;
 
+}
+.reg img{
+	width: 250px;
+	height: 70px;
+	margin-left: 10px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 500px) {
+  .reg {
+    width: 100%;
+  }
+}
+.form_heading span {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 4px;
+}
 /*# sourceMappingURL=style.css.map */
